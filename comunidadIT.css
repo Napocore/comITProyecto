@@ -1,0 +1,17 @@
+body {
+	font-family: Times new romans,Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+	font-size: 30px;
+	/*background-repeat: url("..") no-repeat fixed center;*/
+}
+
+#mensaje {
+	/*display: none;*/
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.marca {
+	color: blue
+	font-size:12px;
+}
+h1 {font-family: Helvetica}
