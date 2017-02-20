@@ -8,10 +8,9 @@
 	
 	<!-- estilos que necesitan importarse -->
 	<link rel="stylesheet" href="css/comunidadIT.css" />
-
 </head>
 <body>
-	<div id="mensaje">
+	<div id="mensaje" class="columns">
 		"hola mundo"
 	</div>
 	<div id="destino"></div><div>Bienvenido al sitio</div><br>
@@ -22,9 +21,15 @@
 	<div id="nuevosElementos">
 	</div>
 	
-	<input type="button" onclick="agregarElementos()" title="Al presionar este botón se ejecutará el método indicado en onclick" value="Agregar elementos"></input><br>
+	<input type="button" id="button" class="button" onclick="agregarElementos()" title="Al presionar este botón se ejecutará el método indicado en onclick" value="Agregar elementos"></input><br>
+	<br>
+	
+	<input type="button" id="button" class="button"
+	onclick="volver()" title="ir a la lista" value="volver"></input><br>
+	<a href="paginas/lista.html">Ir al listado de celulares</a>
+	
 	<br>
 
-	<a href="paginas/lista.html">Ir al listado de celulares</a>
+	
 </body>
 </html>
