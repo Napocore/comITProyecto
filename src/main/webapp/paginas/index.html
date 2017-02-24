@@ -2,11 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-	<!-- archivos js que serán usados -->
 	<script type="text/javascript" src="js/listado.js" ></script>
-	
-	<!-- estilos que necesitan importarse -->
 	<link rel="stylesheet" href="css/comunidadIT.css" />
 </head>
 <body>
@@ -14,18 +10,25 @@
 		"hola mundo"
 	</div>
 	<div id="destino"></div><div>Bienvenido al sitio</div><br>
-	
 	<br>
-	
-	
-	<div id="nuevosElementos">
-	</div>
-	
-	<input type="button" id="button" class="button" onclick="agregarElementos()" title="Al presionar este botón se ejecutará el método indicado en onclick" value="Agregar elementos"></input><br>
+  </div>
+          <div id="nuevosElementos">
+ 
+  
+      <input type="button" onclick="agregarElementos()" title="Al presionar este botón se ejecutará el método indicado en onclick" value="Agregar elementos"></input><br>
+      
+  <br>
 	<br>
-	
-	<input type="button" id="button" class="button"
-	onclick="volver()" title="ir a la lista" value="volver"></input><br>
+	<input type="checkbox" id="checkbox" class="checkbox" checked</input>
+	<input type="checkbox" id="checkbox" class="checkbox" checked</input>
+	<input type="checkbox" id="checkbox" class="checkbox" checked</input>
+	<input type="checkbox" id="checkbox" class="checkbox" checked</input>
+	<input type="checkbox" id="checkbox" class="checkbox" checked</input>
+	<input type="checkbox" id="checkbox" class="checkbox" checked</input>
+  <input type="checkbox" id="checkbox" class="checkbox" checked</input>
+  <input type="checkbox" id="checkbox" class="checkbox" checked</input>
+  <input type="checkbox" id="checkbox" class="checkbox" checked</input>
+  <input type="checkbox" id="checkbox" class="checkbox" checked</input>
 	<a href="paginas/lista.html">Ir al listado de celulares</a>
 	
 	<br>
@@ -137,21 +140,26 @@ function myFunction() {
 }
 </script>
 <body>
-
-<h1>boton que cambia el texto</h1>
-
-<p id="demo">Este texto va a cambiar cuando toque el boton</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "ha cambiado el texto"'>hazme click!</button>
-
+	<h1>boton que cambia el texto</h1>
+	<p id="demo">Este texto va a cambiar cuando toque el boton</p>
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "ha cambiado el texto"'>hazme click!</button>
 </body>
 <body>
+	<h1>otro boton que cambia otro texto</h1>
+	<p id="otro">Este otro texto va a cambiar cuando toque el boton</p>
+	<button type="button" onclick='document.getElementById("otro").innerHTML = "ha cambiado el otro  texto"'>hazme click!</button>
+	</body>
+  <body>
 
-<h1>otro boton que cambia otro texto</h1>
+<p>Acá hay un mensaje de alerta</p>
 
-<p id="otro">Este otro texto va a cambiar cuando toque el boton</p>
+<button onclick="setTimeout(myAlertFunction1, 1500);">Toca</button>
 
-<button type="button" onclick='document.getElementById("otro").innerHTML = "ha cambiado el otro  texto"'>hazme click!</button>
+<script>
+function myAlertFunction1() {
+    alert('alerta!!!');
+}
+</script>
 
 </body>
 </body>
