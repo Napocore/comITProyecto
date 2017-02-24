@@ -12,26 +12,26 @@ listadoCelulares = [
 		},
 		{
 			"marca": "Motorola",
-			"modelo": "X",
+			"modelo": "G 4 PLAY",
 			"sistema_operativo": "Android",
-			"pantalla_pulgadas": 6,
-			"pantalla_resolucion": "1580x1120",
+			"pantalla_pulgadas": 5,
+			"pantalla_resolucion": "1280x720",
 			"camara_resolucion": "8 Mpx",
-			"camara_frontal": false,
+			"camara_frontal": true,
 			"camara_frontal_res": "5 Mpx",
-			"memoria_interna": "32 GB"
+			"memoria_interna": "16 GB"
 		},
 		{
 			"id": 1,
 			"marca": "Motorola",
 			"modelo": "G 4 PLAY",
 			"sistema_operativo": "Android",
-			"pantalla_pulgadas": 5.1,
+			"pantalla_pulgadas": 5,
 			"pantalla_resolucion": "1280x720",
 			"camara_resolucion": "8 Mpx",
 			"camara_frontal": true,
 			"camara_frontal_res": "5 Mpx",
-			"memoria_interna": "24 GB",
+			"memoria_interna": "16 GB",
 			"flash": true
 		},
 		{
@@ -40,11 +40,11 @@ listadoCelulares = [
 			"modelo": "GALAXY J5 J510",
 			"sistema_operativo": "Android",
 			"pantalla_pulgadas": 5.2,
-			"pantalla_resolucion": "1720x1280",
-			"camara_resolucion": "14 Mpx",
+			"pantalla_resolucion": "720x1280",
+			"camara_resolucion": "13 Mpx",
 			"camara_frontal": true,
-			"camara_frontal_res": "6 Mpx",
-			"memoria_interna": "32 GB",
+			"camara_frontal_res": "5 Mpx",
+			"memoria_interna": "16 GB",
 			"flash": true
 		},
 		{
@@ -55,7 +55,7 @@ listadoCelulares = [
 			"pantalla_pulgadas": 5.5,
 			"pantalla_resolucion": "1280x720",
 			"camara_resolucion": "13 Mpx",
-			"camara_frontal": false,
+			"camara_frontal": true,
 			"camara_frontal_res": "5 Mpx",
 			"memoria_interna": "16 GB",
 			"flash": true
@@ -81,7 +81,7 @@ listadoCelulares = [
 			"pantalla_pulgadas": 5,
 			"pantalla_resolucion": "800x480",
 			"camara_resolucion": "13 Mpx",
-			"camara_frontal": false,
+			"camara_frontal": true,
 			"camara_frontal_res": "5 Mpx",
 			"memoria_interna": "16 GB",
 			"flash": true
@@ -91,18 +91,28 @@ listadoCelulares = [
 
 function agregarElementos() {
 	var p = document.createElement("p");
-	p.id = "nuevosElementos";
-	var t = document.createTextNode("LISTO ! agregaste un elemento !! ");
+	p.id = "nuevo";
+	var t = document.createTextNode("[0].marca");
 	p.appendChild(t);
-	var div = document.getElementById("nuevo");
-	div.appendChild(p);
-}
-var objeto= lista 
+	var div = document.createTextNode("texto");
+	p.appendChild(t)
 
-function <button onclick="alert()">alerta</button>
-
-<script>
-function alert() {
-    alert("soy una alerta!");
 }
-</script>
+for (var cont=0;cont <listadoCelulares.lenght;cont++){
+	var p = document.createElement ("li");
+	//opcion 1 generar el texto en una variable y ponerla en el nodo de texto 
+	var texto = "marca"+listadoCelulares [cont]marca;
+	var valor = document.createTextNode (texto)
+	p.appendChild (valor);
+	var div = document.getElementById("nuevosElementos");
+	p.appendChild (p)
+//opcion 2 generar dos nodos de tex8to on la caractersitca y el valor por separado
+var opcion2: document.createElement"li";
+var caractersitca =document.createTextNode("marca:");
+opcion2.appendChild(valorCaracteristica);
+var valorCaracteristica =document.createTextNode (listadoCelulares[cont].marca);
+opcion2.appendChild (valorCaracteristica;)
+var div :document.getElementById("nuevosElementos");
+div.appendChild (opcion2);
+
+}
