@@ -92,8 +92,26 @@ listadoCelulares = [
 function agregarElementos() {
 	var p = document.createElement("p");
 	p.id = "nuevo";
-	var t = document.createTextNode("Esto lo insertamos dinámicamente");
+	var t = document.createTextNode("Elemento agregado");
 	p.appendChild(t);
 	var div = document.getElementById("nuevosElementos");
 	div.appendChild(p);
+}
+for (var cont=0;cont <listadoCelulares.lenght;cont++){
+	var p = document.createElement ("li");
+	//opcion 1 generar el texto en una variable y ponerla en el nodo de texto 
+	var texto = "marca"+listadoCelulares [cont].marca;
+	var valor = document.createTextNode (texto)
+	p.appendChild (valor);
+	var div = document.getElementById("nuevosElementos");
+	p.appendChild (p)
+//opcion 2 generar dos nodos de tex8to on la caractersitca y el valor por separado
+var opcion2= document.createElement("li");
+var caractersitca =document.createTextNode("marca:");
+opcion2.appendChild(valorCaracteristica);
+var valorCaracteristica =document.createTextNode (listadoCelulares[cont].marca);
+opcion2.appendChild(valorCaracteristica);
+var div =document.getElementById("nuevosElementos");
+div.appendChild (opcion2);
+
 }
